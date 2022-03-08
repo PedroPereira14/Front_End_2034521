@@ -8,6 +8,14 @@
 </head>
 <body>
     <script src="https://unpkg.com/vue@3"></script>
-    
+    <div id="app"></div>
+    {{mensagem}}
+    <script>
+        Vue.createApp({
+            data() {
+                mensagem: 'desenvolvimento web'
+            }
+        }).mount('#app')
+    </script>
 </body>
 </html>
